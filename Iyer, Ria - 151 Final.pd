@@ -1,1 +1,5 @@
-#N canvas 192 192 450 300 12;
+#N canvas 192 192 1920 966 12;
+#X obj 26 58 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X msg 26 94 \; pd dsp \$1;
+#X text 17 31 Click to turn DSP on/off;
+#X connect 0 0 1 0;
