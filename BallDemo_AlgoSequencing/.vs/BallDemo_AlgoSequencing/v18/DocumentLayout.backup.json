@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\koi_f\\Downloads\\week9_BallDemo_Generative\\BallDemo_AlgoSequencing\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D8D327DC-4C7D-02A5-7D3F-B77317B56C5E}|Assembly-CSharp.csproj|c:\\users\\koi_f\\downloads\\week9_balldemo_generative\\balldemo_algosequencing\\assets\\scripts\\orbit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8D327DC-4C7D-02A5-7D3F-B77317B56C5E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\orbit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8D327DC-4C7D-02A5-7D3F-B77317B56C5E}|Assembly-CSharp.csproj|C:\\Users\\koi_f\\Downloads\\week9_BallDemo_Generative\\BallDemo_AlgoSequencing\\assets\\scripts\\rotator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8D327DC-4C7D-02A5-7D3F-B77317B56C5E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rotator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\koi_f\\Downloads\\week9_BallDemo_Generative\\BallDemo_AlgoSequencing\\Assets\\Scripts\\PlayerMovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\PlayerMovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Orbit.cs",
+              "DocumentMoniker": "C:\\Users\\koi_f\\Downloads\\week9_BallDemo_Generative\\BallDemo_AlgoSequencing\\Assets\\Scripts\\Orbit.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Orbit.cs",
+              "ToolTip": "C:\\Users\\koi_f\\Downloads\\week9_BallDemo_Generative\\BallDemo_AlgoSequencing\\Assets\\Scripts\\Orbit.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Orbit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T08:01:25.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "C:\\Users\\koi_f\\Downloads\\week9_BallDemo_Generative\\BallDemo_AlgoSequencing\\Assets\\Scripts\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement.cs",
+              "ToolTip": "C:\\Users\\koi_f\\Downloads\\week9_BallDemo_Generative\\BallDemo_AlgoSequencing\\Assets\\Scripts\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerMovement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-07T04:27:27.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Assets\\Scripts\\Rotator.cs",
+              "DocumentMoniker": "C:\\Users\\koi_f\\Downloads\\week9_BallDemo_Generative\\BallDemo_AlgoSequencing\\Assets\\Scripts\\Rotator.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Rotator.cs",
+              "ToolTip": "C:\\Users\\koi_f\\Downloads\\week9_BallDemo_Generative\\BallDemo_AlgoSequencing\\Assets\\Scripts\\Rotator.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Rotator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T09:53:19.442Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

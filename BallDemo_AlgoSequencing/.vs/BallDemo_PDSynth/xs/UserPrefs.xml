@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{70CD9EE9-27C8-CD2A-BD4F-A48011058956}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MovePlayer.cs">
+    <Files>
+      <File FileName="Assets/Scripts/MovePlayer.cs" Line="81" Column="73" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BallDemo_PDSynth" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="MovePlayer.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5884e2e4-0b71-4156-91c8-3f308071e5d0" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
