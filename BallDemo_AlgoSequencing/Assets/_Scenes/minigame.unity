@@ -7361,7 +7361,7 @@ MonoBehaviour:
   thrusterEffect: {fileID: 1769841957}
   flashSpeed: 10
   collectibleParticles: {fileID: 839880883}
-  alarmDistance: 50
+  alarmDistance: 150
   planets:
   - {fileID: 1811883675}
   - {fileID: 1225913600}

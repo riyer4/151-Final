@@ -103,20 +103,29 @@ public class RocketController : MonoBehaviour
         }
     }
 
+    private bool isNearPlanet = false;
+
     void CheckProximity()
     {
+        bool wasNearPlanet = isNearPlanet;
+        isNearPlanet = false;
+        
         foreach (GameObject planet in planets)
         {
             if (planet == null) continue;
             float distance = Vector3.Distance(transform.position, planet.transform.position);
             if (distance < alarmDistance)
             {
-                OSCHandler.Instance.SendMessageToClient("pd2", "/unity/oscalarm", 1);
-                return;
+                isNearPlanet = true;
+                break;
             }
         }
-        OSCHandler.Instance.SendMessageToClient("pd2", "/unity/oscalarm", 0);
-    } 
+
+        if (isNearPlanet != wasNearPlanet)
+        {
+            OSCHandler.Instance.SendMessageToClient("pd2", "/unity/oscalarm", isNearPlanet ? 1 : 0);
+        }
+    }
 
     void OnCollisionEnter(Collision collision)
     {
