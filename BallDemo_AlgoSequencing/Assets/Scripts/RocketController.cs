@@ -18,6 +18,10 @@ public class RocketController : MonoBehaviour
 
     public GameObject collectibleParticles;
 
+    [Header("Proximity Alarm")]
+    public float alarmDistance = 50f;
+    public GameObject[] planets;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -29,6 +33,8 @@ public class RocketController : MonoBehaviour
 
         thrusterRenderer = thrusterEffect.GetComponent<Renderer>();
         originalColor = thrusterRenderer.material.color;
+
+        OSCHandler.Instance.SendMessageToClient("pd2", "/unity/playseq", 1);
     }
 
     void Update()
@@ -36,6 +42,8 @@ public class RocketController : MonoBehaviour
         HandleThrust();
 
         HandleThrusterEffect();
+
+        CheckProximity();
     }
 
     void HandleThrust()
@@ -63,6 +71,10 @@ public class RocketController : MonoBehaviour
         if (isThrusting != wasThrusting)
         {
             OSCHandler.Instance.SendMessageToClient("pd", "/unity/thruster", isThrusting ? 1 : 0);
+            OSCHandler.Instance.SendMessageToClient("pd2", "/unity/thruster", isThrusting ? 1 : 0);
+
+            Debug.Log("Sending thruster OSC: " + (isThrusting ? 1 : 0));
+
         }
     }
 
@@ -83,14 +95,32 @@ public class RocketController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Collectible"))
         {
+            other.gameObject.tag = "Untagged";
             Instantiate(collectibleParticles, other.transform.position, Quaternion.identity);
-            other.gameObject.SetActive(false);
+            Destroy(other.gameObject, 0.1f);
             OSCHandler.Instance.SendMessageToClient("pd", "/unity/collection", 1);
+            OSCHandler.Instance.SendMessageToClient("pd2", "/unity/collection", 1);
         }
     }
+
+    void CheckProximity()
+    {
+        foreach (GameObject planet in planets)
+        {
+            if (planet == null) continue;
+            float distance = Vector3.Distance(transform.position, planet.transform.position);
+            if (distance < alarmDistance)
+            {
+                OSCHandler.Instance.SendMessageToClient("pd2", "/unity/oscalarm", 1);
+                return;
+            }
+        }
+        OSCHandler.Instance.SendMessageToClient("pd2", "/unity/oscalarm", 0);
+    } 
 
     void OnCollisionEnter(Collision collision)
     {
         OSCHandler.Instance.SendMessageToClient("pd", "/unity/crash", 1);
+        OSCHandler.Instance.SendMessageToClient("pd2", "/unity/crash", 1);
     }
 }
